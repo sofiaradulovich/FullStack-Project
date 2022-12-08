@@ -1,0 +1,32 @@
+{% include "header.html"%}
+<form method="post" action="/storage" enctype="multipart/form-data">
+    
+    <div class="card-body">
+        <h5 class="card-title">Enter a new record: </h5>
+
+        <p class="card-text">
+            <div class="form-group">
+                <label for="">Name:</label>
+                <input type="text" name="nombreValue" id="nombreValue">
+
+            </div>
+            <div class="form-group">
+                <label for="">Year:</label>
+                <input type="text" name="anioValue" id="anioValue">
+
+            </div>
+            <div class="form-group">
+                <label for="">Author:</label>
+                <input type="text" name="autorValue" id="autorValue">
+            </div>
+            <div class="form-group">
+                <label for="">Image:</label>
+                <input type="file" name="fileValue" id="fileValue">
+            </div>
+
+        </p>
+    </div>
+    <button type="submit" class="btn btn-success">Send</button>
+    
+</form>
+{% include "footer.html"%}

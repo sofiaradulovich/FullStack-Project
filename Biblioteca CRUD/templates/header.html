@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(100, 230, 161, 0.5);">
+        <a class="navbar-brand">Library</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="btn btn-success" href="{{url_for('main')}}" style="margin-left: .5rem;" style="margin-right: .5rem;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-success" href="{{url_for('create')}}" style="margin-left: .5rem;" >Add Book</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+       
